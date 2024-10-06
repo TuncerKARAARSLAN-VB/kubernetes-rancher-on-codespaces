@@ -14,7 +14,8 @@ Here's a table of common Minikube commands tailored for use in a Codespace envir
 | `minikube ssh`                      | SSH into the Minikube VM.                                  |
 | `minikube logs`                     | View the logs for the Minikube cluster.                    |
 | `minikube ip`                       | Get the IP address of the Minikube cluster.                |
-| `kubectl <command>`                 | Execute kubectl commands. (Ensure kubectl is installed).   |
+| `kubectl <command>` | Execute kubectl commands. (Ensure kubectl is installed).   |
+| sample: `kubectl get pods --all-namespaces` | Execute kubectl commands. (Ensure kubectl is installed).   |
 | `minikube update-check`             | Check for available updates for Minikube.                  |
 | `minikube update-context`           | Update the context for kubectl to point to your Minikube cluster. |
 

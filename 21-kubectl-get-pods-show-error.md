@@ -6,9 +6,9 @@ E1006 09:33:59.159515   32661 memcache.go:265] "Unhandled Error" err="couldn't g
 E1006 09:33:59.160980   32661 memcache.go:265] "Unhandled Error" err="couldn't get current server API group list: Get \"http://localhost:8080/api?timeout=32s\": dial tcp [::1]:8080: connect: connection refused"
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 
-:emoji:
-
 ![Minikubestart Eror](/images/minikube-start-error.png)
+
+🤔
 
 ---
 

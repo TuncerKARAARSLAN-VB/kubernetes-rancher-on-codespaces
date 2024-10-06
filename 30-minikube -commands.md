@@ -19,8 +19,9 @@ Here's a table of common Minikube commands tailored for use in a Codespace envir
 | `minikube update-check`             | Check for available updates for Minikube.                  |
 | `minikube update-context`           | Update the context for kubectl to point to your Minikube cluster. |
 
+| `minikube -p minikube docker-env` | if you want to know minikube docker environment port. |
+
+
 ### Usage in Codespace
 
 To use these commands effectively in your Codespace environment, ensure that you have Docker installed and running, as Minikube relies on Docker to create the Kubernetes cluster. Always start with `minikube start` to set up your environment, and use the dashboard for an intuitive way to manage your cluster.
-
-For further details, refer to the official Minikube documentation [here](https://minikube.sigs.k8s.io/docs/commands/).

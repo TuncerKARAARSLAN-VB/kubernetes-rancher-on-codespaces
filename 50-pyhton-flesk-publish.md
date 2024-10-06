@@ -113,6 +113,11 @@ To run a Python application on Minikube, you'll follow a series of steps that in
 
 - Open your browser and navigate to the URL obtained from the previous command. You should see "Hello, World!" displayed.
 
+    This command provides dev environment port and ip information  
+   ```bash
+    minikube -p minikube docker-env
+   ```
+
 ### Conclusion
 
 You have successfully set up a simple Python application running in Minikube. You can now develop and test more complex applications using this setup.

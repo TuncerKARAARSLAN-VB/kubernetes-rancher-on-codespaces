@@ -22,6 +22,11 @@ Here's a table of common Minikube commands tailored for use in a Codespace envir
 | `minikube config set driver <driver_name>` | Set the driver for Minikube (e.g., `docker`, `virtualbox`). |
 | `minikube config view`              | View the current Minikube configuration.                    |
 | `minikube config set <property> <value>` | Set a specific configuration property.                 |
+| `minikube config set memory 4096`        | Set the default memory allocation to 4096 MB.          |
+| `minikube config set cpus 2`             | Set the default number of CPUs to 2.                   |
+| `minikube config set driver docker`      | Set Docker as the default driver.                      |
+| `minikube config set kubernetes-version v1.20.0` | Set the default Kubernetes version to v1.20.0. |
+| `minikube config set disk-size 20g`      | Set the default disk size to 20 GB.                    |
 | `minikube addons list`              | List all available addons.                                  |
 | `minikube addons enable <addon_name>` | Enable a specific Minikube addon (e.g., `ingress`).       |
 | `minikube addons disable <addon_name>` | Disable a specific Minikube addon.                       |

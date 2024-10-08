@@ -11,10 +11,10 @@ Here's a table of common Minikube commands tailored for use in a Codespace envir
 | `minikube delete`                   | Delete the Minikube cluster.                                |
 | `minikube delete --all`             | Delete all Minikube clusters and profiles.                  |
 | `minikube status`                   | Check the status of the Minikube cluster, including host, kubelet, apiserver, and kubeconfig. |
-| `minikube status -f {{.Host}}`      | Get status of the host component only.                      |
-| `minikube status -f {{.Kubelet}}`   | Check the status of the kubelet component.                  |
-| `minikube status -f {{.APIServer}}` | Verify the status of the API server component.              |
-| `minikube status -f {{.Kubeconfig}}` | Check the status of the kubeconfig.                        |
+| `minikube status -f "{{.Host}}"`      | Get status of the host component only.                      |
+| `minikube status -f "{{.Kubelet}}"`   | Check the status of the kubelet component.                  |
+| `minikube status -f "{{.APIServer}}"` | Verify the status of the API server component.              |
+| `minikube status -f "{{.Kubeconfig}}"` | Check the status of the kubeconfig.                        |
 | `minikube status --output json`     | Get detailed status information in JSON format.             |
 | `minikube status --output table`    | Display status information in a tabular format.             |
 | `minikube dashboard`                | Open the Kubernetes dashboard in your web browser.          |

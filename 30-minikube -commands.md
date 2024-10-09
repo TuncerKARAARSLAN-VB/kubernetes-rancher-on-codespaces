@@ -2,7 +2,7 @@ Here's a table of common Minikube commands tailored for use in a Codespace envir
 
 | **Command**                          | **Description**                                             |
 |--------------------------------------|-------------------------------------------------------------|
-| `minikube start`                    | Start a Minikube cluster.                                   |
+| ```minikube start```                    | Start a Minikube cluster.                                   |
 | `minikube start --driver=docker`    | Start Minikube with Docker driver.                          |
 | `minikube start --memory=4096`      | Start Minikube with specified memory allocation.            |
 | `minikube start --cpus=2`           | Start Minikube with specified number of CPUs.               |

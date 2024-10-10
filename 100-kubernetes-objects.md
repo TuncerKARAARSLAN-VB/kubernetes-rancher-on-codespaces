@@ -1,0 +1,21 @@
+# Kubrenetes Objetcs List
+
+| **Kubernetes Object**      | **Description**                                                                               | **Purpose**                                                                                  |
+|----------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| **Pod**                     | The smallest and simplest unit of deployment in Kubernetes. It contains one or more containers.| Units where applications run. Each pod runs one or more containers.                          |
+| **Service**                 | Provides access to Pods from outside or within the cluster.                                  | Allows Pods to receive traffic from other applications or users.                             |
+| **Deployment**              | An object used to manage and update Pods.                                                    | Manages scaling, updating, and redeploying operations.                                       |
+| **StatefulSet**             | An object used for stateful applications.                                                    | Used to run applications that require state (e.g., databases).                               |
+| **DaemonSet**               | An object used to ensure that a copy of a Pod runs on each node in the cluster.               | Functions that must be present on every node, such as network components or monitoring agents.|
+| **ReplicaSet**              | An object that ensures a specified number of Pods are running.                               | Maintains the number of Pod replicas and automatically recreates them when needed.           |
+| **Job**                     | An object used to run one-off tasks.                                                         | Used for scheduled or one-time jobs.                                                          |
+| **CronJob**                 | An object used for scheduled tasks.                                                          | Runs jobs at specific time intervals or at specified times.                                  |
+| **ConfigMap**               | Stores configuration data for applications.                                                  | Holds configuration files, command-line arguments, or environment variables.                  |
+| **Secret**                  | Ensures sensitive information is stored securely.                                            | Safely stores passwords, API keys, or other sensitive data.                                   |
+| **PersistentVolume (PV)**   | Defines storage resources that are independent of the lifecycle of Pods.                      | Ensures persistent storage within the cluster.                                              |
+| **PersistentVolumeClaim (PVC)**| An object that allows users to request persistent storage.                                    | Enables Pods to interact with persistent storage volumes.                                    |
+| **Ingress**                 | An object used to route HTTP and HTTPS requests.                                             | Directs incoming web traffic to Pods.                                                        |
+| **NetworkPolicy**           | Controls network traffic between Pods or between Pods and other network components.          | Used to isolate or restrict network traffic.                                                  |
+| **Namespace**               | Provides a mechanism for logically separating Kubernetes resources.                            | Manages resources in distinct sections, provides access control, and organizes resources.     |
+| **Role/ClusterRole**        | Grants permissions on specific resources to users or service accounts.                       | Used to define permissions and manage access control.                                        |
+| **RoleBinding/ClusterRoleBinding** | Associates roles with users or service accounts.                                          | Used to perform authorization tasks.                                                          |

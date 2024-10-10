@@ -113,7 +113,7 @@ When your content is ready, you should package it
 
 ```
 docker logogg
-docker login docker.login/tuncerkaraarslan
+docker login docker.login
 ```
 
 It will ask you for your username and password. Go to docker.io in your browser. If you don't have an account, register for a free account and keep your username and password. You will use it in a moment. If you have an account, use your username and password at the login prompt in the docker login command in the terminal screen. 

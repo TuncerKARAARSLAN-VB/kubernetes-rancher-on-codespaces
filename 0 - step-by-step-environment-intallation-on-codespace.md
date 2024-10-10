@@ -1,7 +1,7 @@
 # Merhaba Class - CG Updated This!
 Salih.
 # Installing Minikube in GitHub Codespaces
-
+tuncer
 Minikube allows you to run a local Kubernetes cluster on your machine. Below are the steps to set it up in a GitHub Codespace.
 
 ## Prerequisites

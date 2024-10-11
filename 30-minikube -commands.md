@@ -2,13 +2,13 @@ Here's a table of common Minikube commands tailored for use in a Codespace envir
 
 | **Command**                          | **Description**                                             |
 |--------------------------------------|-------------------------------------------------------------|
-| ```bash minikube start```                    | Start a Minikube cluster.                                   |
+| `minikube start`                    | Initializes and starts a single-node Kubernetes cluster on your local machine using Minikube. This command creates a virtual machine (or uses a container, depending on the driver), installs Kubernetes components, and configures the cluster. It sets up the necessary infrastructure for running Kubernetes locally, including the control plane and worker node components. After execution, you'll have a fully functional Kubernetes environment ready for development and testing purposes. |
 | `minikube start --driver=docker`    | Start Minikube with Docker driver.                          |
 | `minikube start --memory=4096`      | Start Minikube with specified memory allocation.            |
 | `minikube start --cpus=2`           | Start Minikube with specified number of CPUs.               |
 | `minikube start --kubernetes-version=v1.20.0` | Start Minikube with a specific Kubernetes version. |
-| `minikube stop`                     | Stop the running Minikube cluster.                          |
-| `minikube delete`                   | Delete the Minikube cluster.                                |
+| `minikube stop`                     | Gracefully shuts down the running Minikube cluster. This command halts all running processes within the cluster, including the Kubernetes control plane components and any deployed workloads. It preserves the cluster's state, allowing you to resume operations later without losing your configurations or deployed applications. The command ensures a clean shutdown, preventing potential data corruption or inconsistencies. After execution, the virtual machine or container hosting the Minikube cluster is stopped, freeing up system resources. This is particularly useful when you need to temporarily free up resources on your local machine or when you're finished working with Kubernetes for the day but plan to resume later. |
+| `minikube delete`                   | Completely removes the Minikube cluster from your local machine. This command deletes all associated resources, including the virtual machine or container, Kubernetes components, and any deployed workloads. It erases all cluster data, configurations, and persistent volumes. After execution, your system is returned to a state as if Minikube was never installed. This is useful when you want to start fresh, free up resources, or when troubleshooting cluster issues. Note that this action is irreversible, so ensure you've backed up any important data before running this command. |
 | `minikube delete --all`             | Delete all Minikube clusters and profiles.                  |
 | `minikube status`                   | Check the status of the Minikube cluster, including host, kubelet, apiserver, and kubeconfig. |
 | `minikube status -f "{{.Host}}"`      | Get status of the host component only.                      |

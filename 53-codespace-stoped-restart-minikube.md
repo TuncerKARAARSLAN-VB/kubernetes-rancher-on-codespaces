@@ -18,7 +18,7 @@ If you've taken a break and come back to see that your Codespace has stopped, he
 4. **Navigate to Your Project Directory:**
    - Go to the working directory where your `my-python-app` project is located:
      ```bash
-     cd path/to/your/my-python-app
+     cd my-python-app
      ```
 
 5. **Rebuild Your Docker Image:**
@@ -33,7 +33,30 @@ If you've taken a break and come back to see that your Codespace has stopped, he
      docker tag my-python-app docker.io/tuncerkaraarslan/my-python-app:latest
      ```
 
+    ```
+    docker push docker.io/tuncerkaraarslan/my-python-app:latest
+    ```
+
+    ```
+    kubectl set image deployment/my-python-app my-python-app=docker.io docker.io/tuncerkaraarslan/my-python-app:latest
+    ```
+
 7. **Push the Image to Docker Hub:**
+   
+   - Docker Hub re login:
+    ```
+    docker logout
+    docker login docker.login
+    ```
+    
+    Create a Kubernetes secret for Docker registry credentials:
+    ```
+   kubectl create secret docker-registry regcred \
+    --docker-username=tuncerkaraarslan \
+    --docker-password=<your-password> \
+    --docker-email=tuncer.karaarslan@gmail.com 
+    ```
+   
    - Push the image to Docker Hub:
      ```bash
      docker push docker.io/tuncerkaraarslan/my-python-app:latest
@@ -56,6 +79,10 @@ If you've taken a break and come back to see that your Codespace has stopped, he
     - If you encounter further issues, check the logs to diagnose:
       ```bash
       kubectl logs deployment/my-python-app
+      ```
+
+      ```
+      kubectl describe pod <your-pod-name>
       ```
 
 By following these steps, your environment should be restored and the `my-python-app` container should be up and running again in Minikube.

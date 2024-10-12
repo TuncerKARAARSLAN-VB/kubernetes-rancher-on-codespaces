@@ -122,4 +122,10 @@ This will remove the Pod from your cluster.
     kubectl delete pod my-first-pod
     ```
 
+    Delete all pods
+
+    ```bash
+    kubectl delete pod --all
+    ```
+
 By following these steps, you'll be able to create and manage a Pod in Kubernetes.

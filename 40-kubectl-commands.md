@@ -19,3 +19,5 @@
 ### Usage
 
 To use these commands effectively, ensure you have `kubectl` installed and configured to communicate with your Kubernetes cluster. Always check the current context and namespace to avoid any confusion while managing your resources.
+
+![](./images/kubernetes.drawio.png)

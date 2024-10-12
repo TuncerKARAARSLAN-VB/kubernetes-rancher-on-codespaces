@@ -134,6 +134,22 @@
 
 ## Sample
 
+```
+sequenceDiagram
+    participant User
+    participant System
+
+    User->>System: Request Login
+    System->>User: Display Login Form
+    User->>System: Submit Credentials
+    System->>System: Validate Credentials
+    alt Successful Login
+        System->>User: Display Dashboard
+    else Failed Login
+        System->>User: Display Error Message
+    end
+```
+
 ```mermaid
 sequenceDiagram
     participant User

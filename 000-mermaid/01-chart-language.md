@@ -18,6 +18,14 @@ graph TD
   C --> E[End]
 ```
 
+```
+graph TD
+  A[Start] --> B{Decision?}
+  B -->|Yes| C[Proceed]
+  B -->|No| D[Stop]
+  C --> E[End]
+```
+
 This simple example generates a flowchart with a decision point. You can write similar diagrams directly in text form, and Mermaid will handle rendering the graphical representation.
 
 ## Supported Diagrams:

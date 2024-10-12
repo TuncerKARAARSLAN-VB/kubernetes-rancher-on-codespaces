@@ -109,5 +109,49 @@ sequenceDiagram
     Time ->> End: 2024-12-01
 ```
 
-## Conclusion:
+## Conclusion
+
 While there isn't a dedicated "timeline" component in Mermaid, you can creatively use **Gantt charts**, **flowcharts**, or even **sequence diagrams** to represent timelines. Each of these components allows you to visually depict events over time in a structured way, depending on the complexity and type of timeline you wish to build.
+
+## Sample
+
+Here’s an example of a **Mermaid timeline** that illustrates a project timeline with various milestones:
+
+```mermaid
+timeline
+    title Project Timeline
+    2024-01-01 : Project Kickoff
+    2024-02-15 : Requirement Gathering
+    2024-03-30 : Design Phase Completed
+    2024-04-15 : Development Phase Started
+    2024-06-30 : First Prototype Released
+    2024-07-15 : User Testing
+    2024-08-01 : Final Adjustments
+    2024-09-01 : Project Launch
+```
+
+### Explanation
+
+- **Title**: The title of the timeline is "Project Timeline."
+- **Dates**: Each line represents a milestone with a date followed by a description of the event.
+
+This timeline provides a clear overview of the significant events and milestones in a project. You can customize the dates and events according to your specific needs.
+
+![](./images/project-plan.png)
+
+## Sample 2
+
+```mermaid
+gantt
+    title Proje Planı
+    dateFormat  YYYY-MM-DD
+    section Tasarım
+    Araştırma         :a1, 2024-10-01, 3d
+    Planlama          :a2, after a1, 2d
+    section Geliştirme
+    Kodlama           :b1, 2024-10-04, 4d
+    Test              :b2, after b1, 2d
+
+```
+
+![](./images/timeline.png)

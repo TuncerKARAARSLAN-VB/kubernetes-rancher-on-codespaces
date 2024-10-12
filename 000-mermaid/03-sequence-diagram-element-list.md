@@ -5,7 +5,7 @@
 - Represents the actors or objects in the sequence diagram.
 - Syntax: `participant Name`
    
-   ```mermaid
+   ```
    participant Alice
    participant Bob
    ```
@@ -16,7 +16,7 @@
 - **Solid Arrow**: `->` for regular messages.
 - **Dashed Arrow**: `-->` for asynchronous messages.
    
-   ```mermaid
+   ```
    Alice -> Bob: Hello
    Bob --> Alice: Hi back
    ```
@@ -26,7 +26,7 @@
 - Indicates when an object is active during the sequence.
 - Syntax: `activate Name` and `deactivate Name`
 
-   ```mermaid
+   ```
    Alice -> Bob: Activate Bob
    activate Bob
    Bob -> Alice: Response
@@ -38,7 +38,7 @@
 - Represents repeating messages or actions.
 - Syntax: `loop Description ... end`
    
-   ```mermaid
+   ```
    loop Check every second
      Alice -> Bob: Ping
    end
@@ -49,7 +49,7 @@
 - For decisions and alternate paths.
 - Syntax: `alt Condition ... else ... end`
    
-   ```mermaid
+   ```
    alt Successful
      Alice -> Bob: OK
    else Failed
@@ -62,7 +62,7 @@
 - Represents concurrent processes.
 - Syntax: `par ... and ... end`
    
-   ```mermaid
+   ```
    par Task 1
      Alice -> Bob: Start task 1
    and Task 2
@@ -75,7 +75,7 @@
 - You can add notes for clarification or comments.
 - Syntax: `Note left of Name: text` or `Note right of Name: text`
    
-   ```mermaid
+   ```
    Note right of Bob: Thinking...
    ```
 
@@ -84,7 +84,7 @@
 - Represents a message that a participant sends to themselves.
 - Syntax: `Name ->> Name: Action`
    
-   ```mermaid
+   ```
    Alice ->> Alice: Reflecting
    ```
 
@@ -93,7 +93,7 @@
 - Used to indicate an interruption in the flow.
 - Syntax: `break Description ... end`
    
-   ```mermaid
+   ```
    break System error
      Alice -> Bob: Error message
    end
@@ -104,7 +104,7 @@
 - Shows critical sections.
 - Syntax: `critical Description ... end`
    
-   ```mermaid
+   ```
    critical Critical operation
      Alice -> Bob: Do something critical
    end
@@ -115,7 +115,7 @@
 - Groups actions together for emphasis.
 - Syntax: `rect color`
    
-   ```mermaid
+   ```
    rect rgb(191, 223, 255)
      Alice -> Bob: Grouped action
    end
@@ -126,7 +126,7 @@
 - For optional steps.
 - Syntax: `opt Description ... end`
    
-   ```mermaid
+   ```
    opt Optional step
      Alice -> Bob: Can skip this
    end
@@ -150,7 +150,8 @@ sequenceDiagram
     end
 ```
 
-### Explanation:
+### Explanation
+
 - **Participants**: There are two participants, `User` and `System`.
 - **Arrows**: The arrows indicate the messages being sent between the user and the system.
 - **alt/else**: The `alt` block shows an alternative flow depending on whether the login is successful or failed.

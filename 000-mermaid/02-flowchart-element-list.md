@@ -151,7 +151,16 @@ graph TD
     D --> E[End]
 ```
 
-## Explanation:
+```mermaid
+graph TD
+    A[Start] --> B{Decision Point}
+    B -->|Yes| C[Action 1]
+    B -->|No| D[Action 2]
+    C --> E[End]
+    D --> E[End]
+```
+
+## Explanation
 
 - **A**: Represents the start of the process.
 - **B**: A decision point where the flow can branch based on "Yes" or "No".

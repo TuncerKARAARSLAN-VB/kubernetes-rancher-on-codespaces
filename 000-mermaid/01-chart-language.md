@@ -10,7 +10,7 @@
 
 ## Example of a Mermaid Flowchart:
 
-```mermaid
+```
 graph TD
   A[Start] --> B{Decision?}
   B -->|Yes| C[Proceed]
@@ -18,7 +18,7 @@ graph TD
   C --> E[End]
 ```
 
-```
+```mermaid
 graph TD
   A[Start] --> B{Decision?}
   B -->|Yes| C[Proceed]

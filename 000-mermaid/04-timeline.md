@@ -120,20 +120,26 @@ While not traditionally used for timelines, **sequence diagrams** could be adapt
 ```
 sequenceDiagram
     participant Time
+    participant Event1
+    participant Event2
+    participant Event3
+
     Time --> Event1: 2024-10-01
     Time --> Event2: 2024-10-10
     Time --> Event3: 2024-11-01
-    Time --> End: 2024-12-01
-    
+
 ```
 
 ```mermaid
 sequenceDiagram
     participant Time
+    participant Event1
+    participant Event2
+    participant Event3
+
     Time --> Event1: 2024-10-01
     Time --> Event2: 2024-10-10
     Time --> Event3: 2024-11-01
-    Time --> End: 2024-12-01
 
 ```
 

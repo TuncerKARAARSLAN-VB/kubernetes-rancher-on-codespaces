@@ -132,4 +132,27 @@
    end
    ```
 
-These components help you build complex and detailed **sequence diagrams** using Mermaid syntax.
+## Sample
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant System
+
+    User->>System: Request Login
+    System->>User: Display Login Form
+    User->>System: Submit Credentials
+    System->>System: Validate Credentials
+    alt Successful Login
+        System->>User: Display Dashboard
+    else Failed Login
+        System->>User: Display Error Message
+    end
+```
+
+### Explanation:
+- **Participants**: There are two participants, `User` and `System`.
+- **Arrows**: The arrows indicate the messages being sent between the user and the system.
+- **alt/else**: The `alt` block shows an alternative flow depending on whether the login is successful or failed.
+
+![](./images/sequence-diagram.png)

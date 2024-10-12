@@ -6,7 +6,9 @@ In Mermaid, flowcharts are created using various objects represented by specific
 Represents a standard process or box.
 
 ```mermaid
-A[Standard Process]
+graph td
+
+    A[Standard Process]
 ```
 
 - **Syntax**: `A[Text]`

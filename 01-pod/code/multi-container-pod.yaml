@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-multi-container-pod
+  labels:
+    app: myapp
+spec:
+  containers:
+  - name: my-multicontainer-nginx-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+  - name: sidecar-container
+    image: busybox
+    command: ['sh', '-c', 'while true; do echo Hello Kubernetes!; sleep 10; done']

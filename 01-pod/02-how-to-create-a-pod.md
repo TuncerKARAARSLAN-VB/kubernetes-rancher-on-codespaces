@@ -222,3 +222,11 @@ This will remove the Pod from your cluster.
     ```
 
 By following these steps, you'll be able to create and manage a Pod in Kubernetes.
+
+[Sample YAML Code - Single Pod Create](./code/my-nginx-pod.yaml)
+
+[Sample YAML Code - Multi Container Pod Create](./code/multi-container-pod.yaml)
+
+[Sample YAML Code - Multi Container With Same Folder Shared Together](./code/multi-container-mounted-same-log.yaml)
+
+[Sample YAML Code - Single Pod Limited Resources](./code/my-pods-limited.yaml)

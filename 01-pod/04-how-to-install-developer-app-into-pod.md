@@ -11,7 +11,7 @@ To "push" an application developed into a Kubernetes Pod, you typically follow t
    FROM python:3.9-slim
 
    # Working directory
-   WORKDIR /app
+   WORKDIR /erdem-helloworld
 
    # Copy requirements file and application files
    COPY requirements.txt .

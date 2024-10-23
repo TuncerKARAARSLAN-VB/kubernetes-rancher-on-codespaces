@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metrics-server
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels:
+      k8s-app: metrics-server
+  template:
+    metadata:
+      labels:
+        k8s-app: metrics-server
+    spec:
+      securityContext:                       # Move fsGroup to pod level
+        fsGroup: 2000                        # File system group to ensure permissions
+      containers:
+      - name: metrics-server
+        image: k8s.gcr.io/metrics-server/metrics-server:v0.6.2
+        args:
+        - --kubelet-insecure-tls
+        ports:
+        - containerPort: 443
+          protocol: TCP
+        securityContext:                      # Keep this at the container level
+          runAsUser: 1000                     # Ensure it runs as a specific user
+          runAsGroup: 3000                    # Run as a specific group
+        volumeMounts:
+        - name: tmp-cert-storage
+          mountPath: /apiserver.local.config  # Specify the location where certificates are stored
+      volumes:
+      - name: tmp-cert-storage
+        emptyDir: {}                          # Create a temporary directory for certificate storage

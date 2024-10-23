@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: erdem-flask-pod
+  labels:
+    app: erdemhelloworld
+spec:
+  containers:
+  - name: erdem-helloworld-container
+    image: erdem-flask-helloworld-image:latest
+    ports:
+    - containerPort: 80

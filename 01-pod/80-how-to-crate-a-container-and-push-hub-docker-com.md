@@ -81,6 +81,10 @@ To create a container, package your application, and deploy it in a Kubernetes p
 1. **Login to Docker Hub** (or your chosen registry):
 
    ```bash
+   docker logout
+
+   docker logout myregistry.example.com
+
    docker login
    ```
 

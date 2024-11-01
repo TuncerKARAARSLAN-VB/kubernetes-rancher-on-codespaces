@@ -21,4 +21,3 @@
 - kubectl port-forward service/nginx-service 8082:80
 
 - html://localhost:8082
-

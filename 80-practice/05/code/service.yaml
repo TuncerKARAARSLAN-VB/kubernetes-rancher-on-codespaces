@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sbm-nginx-service
+spec:
+  selector:
+    app: sbm-nginx-app  # Deployment ile eşleşen label
+  type: NodePort  # NodePort tipi ile dış erişim sağlanır
+  ports:
+  - port: 91       # Servisin dinleyeceği port
+    targetPort: 80  # Pod'daki container'ın dinlediği port
+    nodePort: 30000 # Bu port, node üzerinde dışarıdan erişilebilir

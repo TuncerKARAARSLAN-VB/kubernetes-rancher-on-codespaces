@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: app1-ingress  
+  namespace: sbm-dev  # Eğer farklı bir namespace kullanıyorsanız burayı değiştirin.
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: app1.sbm.gov.tr
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: sbm-nginx-service  # Yönlendireceğiniz servis adı
+                port:
+                  number: 91         # Servis port numarası

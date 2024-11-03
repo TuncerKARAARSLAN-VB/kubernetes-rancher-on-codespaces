@@ -64,3 +64,13 @@ Through this training, SBM Turkey gained the following competencies:
 By the end of the training, the SBM Turkey teams were well-equipped to implement Kubernetes in their enterprise projects efficiently, preparing their technology infrastructure for the future.
 
 I would like to thank all the participants who collaborated on the project for their support during the training.
+
+**Trainers:**
+
+- [Trainer - Tuncer KARAARSLAN](https://www.linkedin.com/in/tuncerkaraarslan/)
+
+- [Trainer - Rıfat Erdem Şahin](https://www.linkedin.com/in/rifaterdemsahin/)
+
+**Participants:**
+
+[For all participant list](https://github.com/TuncerKARAARSLAN-VB/kubernetes-rancher-on-codespaces/settings/access)
